@@ -35,7 +35,8 @@ const App = () =>{
         //API esto no es una buena idea
     }, [searchQuery]);
 
-    //De esta forma hago una funcion que haga llamadas asincronas (??)
+    //De esta forma hago una funcion que haga llamadas asincronas el async y await se utiliza normalmente con los promises
+    //para que estas sean mas faciles de trabajar
     const getRecipes = async () =>{
 
         //Se debe de poner await a la hora de recibir el request
