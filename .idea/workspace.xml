@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e82dadc-3306-4425-b359-02d2e523404e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/recipe.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recipe.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +15,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Recipe.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/App.css" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/recipe.module.css" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/App.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1oa5BYGEDr8qhB37nRi1xM3kgKU" />
   <component name="ProjectLevelVcsManager">
@@ -58,6 +67,9 @@
       <updated>1613511728015</updated>
       <workItem from="1613511731369" duration="6870000" />
       <workItem from="1613519428738" duration="163000" />
+      <workItem from="1613521561729" duration="32000" />
+      <workItem from="1613526422804" duration="2094000" />
+      <workItem from="1613528524298" duration="745000" />
     </task>
     <servers />
   </component>

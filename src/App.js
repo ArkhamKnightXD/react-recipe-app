@@ -1,3 +1,4 @@
+//useEffect y useState son react hooks
 import React, {useEffect, useState} from "react";
 import './App.css';
 import Recipe from "./Recipe";
@@ -45,6 +46,7 @@ const App = () =>{
         //recibo la data y la convierto a json antes de guardarla
         const data = await response.json();
 
+        //Accedo al elemento hits de estos datos que aqui estan las recetas
         setRecipes(data.hits);
     };
 
@@ -56,10 +58,8 @@ const App = () =>{
 
     const getSearch = event =>{
 
-        //Con esto evito el refresh de la pagina
+        //Con esto evito el refresh de la pagina a la hora de hacer submit
         event.preventDefault();
-
-        console.log(search);
 
         setSearchQuery(search);
         //para que se borre el texto luego de hacer la busqueda
@@ -69,7 +69,7 @@ const App = () =>{
   return(
       <div className="App">
 
-        {/*  Se ejecutara el getSearch cuando se presione el button*/}
+        {/*  Se ejecutara el getSearch cuando se presione el button de buscar ya que el button es de type submit*/}
         <form onSubmit={getSearch} className="search-form">
           {/*  Al poner onchange esto indica que cada vez que agregue una letra la funcion definida en onchage se ejectutara*/}
           <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
@@ -79,20 +79,23 @@ const App = () =>{
         </form>
           {/*<h1 onClick={()=>{setCounter(counter+1)}}>{counter}</h1>*/}
 
-          {/*Debo de agregar key a la hora de utilizar map e iterar elementos para evitar error de each unique child*/}
+          {/*Debo de agregar key a la hora de utilizar map e iterar elementos para evitar error de each unique child
+          el key debe ser un identificador unico*/}
           {/*Se pueden poner los parentesis o no ponerse en el map*/}
-          {recipes.map((recipe)=>(
-            <Recipe
+          <div className="recipes">
+              {recipes.map((recipe)=>(
+                  <Recipe
 
-                key={recipe.recipe.label}
-                title={recipe.recipe.label}
-                calories={recipe.recipe.calories}
-                image={recipe.recipe.image} />
-          ))}
-
+                      key={recipe.recipe.label}
+                      title={recipe.recipe.label}
+                      calories={recipe.recipe.calories}
+                      image={recipe.recipe.image}
+                      ingredients={recipe.recipe.ingredients}
+                  />
+              ))}
+          </div>
       </div>
   )
-
 }
 
 export default App;
